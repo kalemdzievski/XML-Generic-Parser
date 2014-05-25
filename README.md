@@ -16,9 +16,7 @@ Usage
 
 Just import this library into your project and write the following code in your class.
 ```java
-<pre>
 String yourResponse; // Set your response string here;
 Class<?> yourResultClass; // Set your result class here;
 XMLParser parser = new XMLParser();
 Object result = parser.parseXML(yourResponse, yourResultClass);
-</pre>
