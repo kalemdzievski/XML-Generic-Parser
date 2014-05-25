@@ -20,3 +20,15 @@ String yourResponse; // Set your response string here;
 Class<?> yourResultClass; // Set your result class here;
 XMLParser parser = new XMLParser();
 Object result = parser.parseXML(yourResponse, yourResultClass);
+```
+Then just cast the result object into your result class.
+
+You can use annotations like this:
+```java
+@XMLParserField(name = "lastBuildDate")
+public String lastChange;
+```
+This will save the element with tag lastBuildDate into the string variable lastChange.
+
+
+IMPORTANT! Note that your result class must be structured exactly the same as the xml response!<br>
